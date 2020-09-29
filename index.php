@@ -67,14 +67,23 @@ else {
                 <!-- Output the data here -->
                 <?php
                     // Check if title, description and category is set 
-                    if() { 
+                    if(empty($_POST['Category'])){
+                        $_errors[]= 'Category in not empty';
+                    }
+                   
                 ?>
                 <div class="card">
                 <div class="card-header">
                         <!-- Output Title Here -->
+                        if(empty($_POST['card-header'])){
+                        $_errors[]= 'card-header in not empty';
+                    }
                     </div>
                     <div class="card-body">
                         <!-- output description here -->
+                        if(empty($_POST['post despcrition'])){
+                        $_errors[]= 'post description in not empty';
+                    }
                     </div>
                     <div class="card-footer">
                     <span class="badge badge-secondary">
